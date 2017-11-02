@@ -1,0 +1,90 @@
+{
+  "ID": "do_AssistiveTouch",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "辅助按钮",
+  "Version": "Internal",
+  "Description": "可用于模拟类似iOS设备的AssistiveTouch按钮，支持自定义样式和大小",
+  "Icon": "",
+  "IOS": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Android": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [
+    {
+      "ID": "touch",
+      "Description": "点击view触发",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "hideView",
+      "Name": "隐藏辅助按钮",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    },
+    {
+      "ID": "showView",
+      "Name": "显示辅助按钮",
+      "Description": "可设置属性设置view的大小、样式和是否移动",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "location",
+          "Name": "view初始的位置",
+          "Type": "Number",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "x,y，中间用逗号隔开"
+        },
+        {
+          "ID": "size",
+          "Name": "view的大小",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "80,80",
+          "Description": "width,height，中间用逗号隔开"
+        },
+        {
+          "ID": "image",
+          "Name": "view的展示图片",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "图片地址，支持source://、data://路径"
+        },
+        {
+          "ID": "move",
+          "Name": "是否支持移动",
+          "Type": "Bool",
+          "Required": 0,
+          "DefaultValue": "true",
+          "Description": "view是否支持移动，缺省支持"
+        }
+      ]
+    }
+  ],
+  "asyncMethodes": []
+}
