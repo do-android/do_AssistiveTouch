@@ -1,0 +1,2 @@
+# do_AssistiveTouch
+可用于模拟类似iOS设备的AssistiveTouch按钮，支持自定义样式和大小；android平台需要通过订阅page组件的pause和result事件来控制组件的显示和隐藏
